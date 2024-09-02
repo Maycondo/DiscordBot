@@ -12,4 +12,3 @@ etiquettes = {
     9: "Evite discussões sobre tópicos polêmicos como política e religião.",
     10: "Qualquer violação das regras pode resultar em punições, incluindo banimento do servidor."
 }
-

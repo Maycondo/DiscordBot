@@ -40,7 +40,7 @@ async def on_member_join(member):
     else:
         print(f'Canal com ID {welcome_channel_id} não encontrado')
 
-# O bot reconhcer sempre que um membro(usuário) sai ou removido do servidor
+# O bot reconhecer sempre que um membro(usuário) sai ou removido do servidor
 @bot.event
 async def on_member_remove(member):
        romeve_channel_id = 1265036153329942529
