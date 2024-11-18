@@ -42,4 +42,29 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
 - **Regras de Etiqueta**
  
-    Comando para **banir** ou **expulsar** membros do servidor.
+    O Bot lembra os usuários das regras básicas do servido quanso e solicitado comamdo. **`!regras`**
+
+*Exemplo*   
+
+    📜 Essas são as regras que devem ser seguidas:
+      1️⃣ Respeito: Trate todos com respeito. Comentários ofensivos ou discriminatórios não serão tolerados.
+      2️⃣ Sem Spam: 🚫 Evite spam ou flood nos canais.
+      3️⃣ Canais Apropriados: 📂 Use os canais para os tópicos correspondentes.
+      4️⃣ Conteúdo Proibido: 🚷 Não poste conteúdo ilegal ou NSFW.
+      5️⃣ Moderadores: 🛡️ Siga as instruções dos moderadores para manter a harmonia no servidor. 
+
+- **Sistema de comandos**
+ 
+    O Bot responde a comando pré-configurados para realizar diversas ações. Só funcionar chat do bot.
+
+*Exemplo*
+
+   **`!ajudar`**: Mostra todos os comandos disponíveis.
+
+   **`!Oi`**: Retorna um  apresentação de voltar
+   
+   **`!Regras`**: Retorna um  apresentação de voltar
+
+
+
+ 
