@@ -18,8 +18,9 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 ## funcionalidades
 
 
-- **Mensagem de Boas-vindas**
-  O Bot enviar menssagen de boas-vindas personalizadar cada novo membro que entra no servido.
+- **Mensagem de Boas-vindas** 
+   
+    O Bot enviar menssagen de boas-vindas personalizadar cada novo membro que entra no servido.
 
  *Exemplo* 
  
@@ -27,4 +28,18 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
 
 - **Moderação Básica**
-  O Bot enviar menssagen de boas-vindas personalizadar cada novo membro que entra no servido.
+ 
+    Comando para **banir** ou **expulsar** membros do servidor.
+
+ *Exemplo* 
+
+    ⚠️ O membro {member.mention} saiu ou foi removido do servidor. 🚪  
+
+ *Exemplo* 
+ 
+    🚨 Alerta: O usuário {member} foi banido do servidor {guild.name} em 🕒 {ban_time} UTC. 🚫 
+
+
+- **Regras de Etiqueta**
+ 
+    Comando para **banir** ou **expulsar** membros do servidor.
