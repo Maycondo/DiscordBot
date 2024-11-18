@@ -41,12 +41,8 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
 
 - **Regras de Etiqueta**
- 
-<<<<<<< HEAD
+
     O Bot lembra os usuários das regras básicas do servido quanso e solicitado comamdo. **`!regras`**
-=======
-    O Bot lembra os usuários das regras básicas do servidor quando e solicitado comamdo. **`!regras`**
->>>>>>> 538dfed (Fazendo algumas alterações no bot é documentando.)
 
 *Exemplo*   
 
@@ -65,18 +61,10 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
    **`!ajudar`**: Mostra todos os comandos disponíveis.
 
-<<<<<<< HEAD
    **`!Oi`**: Retorna um  apresentação de voltar
    
    **`!Regras`**: Retorna um  apresentação de voltar
 
-
-
- 
-=======
-   **`!Oi`**: Retorna um  apresentação de voltar.
-   
-   **`!Regras`**: Imprimir todas as regras do servidor.
 
 *Aviso se membro manda um commando sem esta listado,  o bot envia a seguinte mensagem de aviso.*
 
@@ -93,5 +81,4 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
  - Gerenciar eventos como mensagens, reações e novos membros.
  - Enviar mensagens e gerenciar canais
 
- Para mais informações, visite a **[discord.py](https://discordpy.readthedocs.io/)**.
->>>>>>> 538dfed (Fazendo algumas alterações no bot é documentando.)
+ Para mais informações, visite a **[discord.py](https://discordpy.readthedocs.io/)**.)
