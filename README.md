@@ -42,7 +42,11 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
 - **Regras de Etiqueta**
  
+<<<<<<< HEAD
     O Bot lembra os usuários das regras básicas do servido quanso e solicitado comamdo. **`!regras`**
+=======
+    O Bot lembra os usuários das regras básicas do servidor quando e solicitado comamdo. **`!regras`**
+>>>>>>> 538dfed (Fazendo algumas alterações no bot é documentando.)
 
 *Exemplo*   
 
@@ -61,6 +65,7 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
    **`!ajudar`**: Mostra todos os comandos disponíveis.
 
+<<<<<<< HEAD
    **`!Oi`**: Retorna um  apresentação de voltar
    
    **`!Regras`**: Retorna um  apresentação de voltar
@@ -68,3 +73,25 @@ Bot automatizador desenvolvidor completamenter com linguagemde programaçao Pyth
 
 
  
+=======
+   **`!Oi`**: Retorna um  apresentação de voltar.
+   
+   **`!Regras`**: Imprimir todas as regras do servidor.
+
+*Aviso se membro manda um commando sem esta listado,  o bot envia a seguinte mensagem de aviso.*
+
+    ❌ {message.author.mention}, esse comando não existe! 🤔💡 Tente novamente ou use !ajuda para ver os comandos disponíveis.",.
+
+*Se o usuário não utilizar **`!`** no início do comando, o bot responde com a seguinte mensagem  .*
+    
+    ⚠️ {message.author.mention}, os comandos só funcionarão se você usar '!' na frente! ❗😊
+
+## Sobre a Biblioteca **`discord.py`**
+ A Biblioteca **`discord.py `** foi usada para facilitar o desenvolvidor e crição do bot, Ela fornece uma interface amigavel para interagir com API do Discord.
+
+ - Criar commandos personalizados
+ - Gerenciar eventos como mensagens, reações e novos membros.
+ - Enviar mensagens e gerenciar canais
+
+ Para mais informações, visite a **[discord.py](https://discordpy.readthedocs.io/)**.
+>>>>>>> 538dfed (Fazendo algumas alterações no bot é documentando.)

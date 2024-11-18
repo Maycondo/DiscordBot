@@ -1,4 +1,3 @@
-    
 import discord
 import datetime 
 from Etiquette import etiquettes
@@ -8,7 +7,6 @@ intents = discord.Intents.default()
 intents.bans = True
 intents.members = True
 intents.message_content = True
-
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
@@ -27,7 +25,7 @@ async def on_member_join(member):
     channel = bot.get_channel(welcome_channel_id)
 
     if channel: 
-       description = f'Bem vindo(a) ao servidor {member.mention} , leia as regras antes de começa a usar o servidor \n'
+       description = f'🎉 Bem vindo(a) ao servidor {member.mention}! Aproveite o servidor e divirta-se! \n'
        embed = discord.Embed(
             title = 'Bem-vindo(a)',
             description = f'{description} você pode digita "!regras" no Chat do bot para que eu informe as regras do servidor ou ir em #regras',
@@ -40,24 +38,24 @@ async def on_member_join(member):
     else:
         print(f'Canal com ID {welcome_channel_id} não encontrado')
 
-# O bot reconhecer sempre que um membro(usuário) sai ou removido do servidor
+# O bot reconhecer sempre que um membro(usuário) sair ou removido do servidor
 @bot.event
 async def on_member_remove(member):
-       romeve_channel_id = 1265036153329942529
-       channel = bot.get_channel(romeve_channel_id)
+       Remove_user_channel_id = 1265036153329942529
+       channel = bot.get_channel(Remove_user_channel_id)
 
        if channel:
            embed = discord.Embed(
                title='Usuário Saiu',
-               description=f'O membro {member.mention} saiu ou foi removido do servidor.',
+               description=f'⚠️ O membro {member.mention} saiu ou foi removido do servidor. 🚪',
                color=discord.Color.red(),
            )
            await channel.send(embed=embed)
            print(10 * '-')
-           print('O membro {member.name} ({member.id}) saiu ou foi removido do servidor')
+           print('O membro {member.name} ({member.id}) saiu ou foi removido do servidor. 🚪')
            return
        else:
-           print(f'Canal com ID {romeve_channel_id} não encontrado')  
+           print(f'Canal com ID {Remove_user_channel_id} não encontrado')  
 
 # O bot reconhecer quanto membro(usuário) é banidor
 @bot.event
@@ -68,12 +66,12 @@ async def on_member_ban(guild, member):
 
         if channel:
             embed = discord.Embed(
-                description=f'Usuário {member} foi banido do servidor {guild.name} em {ban_time} UTC',
+                description=f'🚨 Alerta: O usuário {member} foi banido do servidor {guild.name} em 🕒 {ban_time} UTC. 🚫',
                 color=discord.Color.red(),
             )
             await channel.send(embed=embed)
             print(10 * '-')
-            print(f'Usuário {member} foi banido do servidor {guild.name}')
+            print(f'🚨 Alerta: O usuário {member} foi banido do servidor {guild.name}')
             return
         else:
            print(f'Canal com ID {ban_channel_id} não encontrado')  
@@ -96,7 +94,7 @@ async def on_message(message):
         if '!oi' in message_content:
             embed = discord.Embed(
                 title="Saudações!", 
-                description=f"Olá, {message.author.mention} oque voce deseja hoje!",
+                description=f"👋 Olá, {message.author.mention}! 😊 O que você deseja hoje? 💬✨",
                 color=discord.Color.blue(),
             )
             await message.channel.send(embed=embed)
@@ -106,7 +104,7 @@ async def on_message(message):
         if '!ajuda' in message_content:
             embed = discord.Embed(
                 title="Bem vindo!",
-                description=f"Olá!{message.author.mention}  Eu sou o Chopper, um bot criado para ajudar você. Seja bem-vindo ao servidor! Vá no chat do bot para mais informações.",
+                description=f"👋 Olá, {message.author.mention}! Eu sou o Chopper, um bot criado para ajudar você. 🤖✨",
             )
             await message.channel.send(embed=embed)
             return
@@ -119,7 +117,7 @@ async def on_message(message):
         # Se member(usuário) tentar mandar comando sem ! vai enviar um messgem
         if not '!' in message_content:
             embed = discord.Embed(
-                description=f"{message.author.mention} Comandos so funcionar com ' ! ' na frente",
+                description=f"⚠️ {message.author.mention}, os comandos só funcionarão se você usar '!' na frente! ❗😊",
                 color=discord.Color.red()
             )
             await message.channel.send(embed=embed)
@@ -127,11 +125,10 @@ async def on_message(message):
 
         # Se nenhum comando for encontrado, responde com mensagem de erro
         embed = discord.Embed(
-                description=f"{message.author.mention} esse comando não existir!",
+                description=f"❌ {message.author.mention}, esse comando não existe! 🤔💡 Tente novamente ou use !ajuda para ver os comandos disponíveis.",
                 color=discord.Color.red()
         )
         await message.channel.send(embed=embed)
-
 
     await bot.process_commands(message) 
                                                                                                                                                                                  
@@ -141,11 +138,11 @@ async def send_rules_message(message, etiquettes):
         embed = discord.Embed(
             title="Regras do servidor",
             description=rules_discription,
-            color=discord.Color.blue(),
+                color=discord.Color.blue(),
         )
         await message.channel.send(embed=embed)
 def format_rules(etiquettes):
-    description = "Essas são as regras que devem ser seguidas:\n\n"
+    description = "📜 Essas são as regras que devem ser seguidas:\n\n"
     for idx, rule in etiquettes.items():
         description += f"{idx}. {rule}\n\n"
     return description
