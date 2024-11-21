@@ -20,7 +20,7 @@ Automatizador desenvolvido completamente em Python, com funções personalizadas
 O bot envia uma mensagem de boas-vindas personalizada para cada novo membro que entra no servidor.
 
 *Exemplo*:
-```text
+text
 🎉 Bem-vindo(a) ao servidor {member.mention}! Aproveite o servidor e divirta-se!
 
  *Exemplo* 
