@@ -1,35 +1,27 @@
-
 # Discord Bot
 
-Bot automatizador desenvolvidor completamenter com linguagemde programaçao Python, com funções personalizadas.
+Automatizador desenvolvido completamente em Python, com funções personalizadas para gerenciar servidores Discord.
 
 ## Estrutura do Projeto
 
-- **`Main.py`**: Arquivo principal que inicializa o bot.
-- **`Etiquette.py`**: Contém funcionalidades relacionadas a regras que o usuário dever sergui.
-- **`.venv`**: Ambiente virtual para gerenciar as dependências do projeto.
+- **`Main.py`**: Inicializa o bot e gerencia eventos principais.
+- **`Etiquette.py`**: Contém funcionalidades relacionadas às regras do servidor.
+- **`.venv`**: Ambiente virtual que gerencia as dependências do projeto.
 - **`__pycache__`**: Diretório gerado automaticamente para armazenar os arquivos compilados.
 
-## Tecnoligias Utilizadas 
+## Tecnologias Utilizadas 
 
-- **[Python](https://www.python.org/)**: Linguagem principal para o desenvolvimento do Bot.
-- **[discord.py](https://discordpy.readthedocs.io/)**: Biblioteca usada para criar o bot e interagir com API do discord.
+- **[Python](https://www.python.org/)**: Linguagem principal para o desenvolvimento do bot.
+- **[discord.py](https://discordpy.readthedocs.io/)**: Biblioteca que interage com a API do Discord.
 
-## funcionalidades
+## Funcionalidades
 
+### Mensagem de Boas-Vindas
+O bot envia uma mensagem de boas-vindas personalizada para cada novo membro que entra no servidor.
 
-- **Mensagem de Boas-vindas** 
-   
-    O Bot enviar menssagen de boas-vindas personalizadar cada novo membro que entra no servido.
-
- *Exemplo* 
- 
-    🎉 Bem vindo(a) ao servidor {member.mention}! Aproveite o servidor e divirta-se!
-
-
-- **Moderação Básica**
- 
-    Comando para **banir** ou **expulsar** membros do servidor.
+*Exemplo*:
+```text
+🎉 Bem-vindo(a) ao servidor {member.mention}! Aproveite o servidor e divirta-se!
 
  *Exemplo* 
 
